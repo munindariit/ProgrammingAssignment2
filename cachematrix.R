@@ -29,7 +29,7 @@ cacheSolve <- function(x, ...) {
   }
   #we need to call function(compute) when it isn't in cache.
   matrix <-x$get()
-  matrixInverse <-solve(matrix, ...) #solve() computes inv of square matrix
+  matrixInverse <-solve(matrix, ...)   #solve() function computes inv of square matrix
   x$setInverse(matrixInverse)
   matrixInverse
 }
